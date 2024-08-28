@@ -1,0 +1,35 @@
+.about_main{
+    background-color: aliceblue;
+    position: absolute;
+    inset: 0vw;
+    padding-left: 5vw;
+    padding-top: 5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+    p{
+        font-size: 18px;
+    }
+}
+#back{
+    width: 35vw;
+    text-align: center;
+    /* margin: 0 auto; */
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 25px;
+    border: 1px solid rgb(9, 32, 54);
+    background: inherit;
+    border-radius: 10rem;
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 5px 10px 2px rgb(15, 15, 15);
+    cursor: pointer;
+}
+#back:hover{
+    scale: 1.01;
+    box-shadow: 0px 5px 10px 2px rgb(15, 15, 15);
+    transition: scale .5s;
+}
+#back:active{
+    scale: .9;
+}

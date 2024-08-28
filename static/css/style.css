@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+body{
+    overflow: hidden;
+    max-width: 1366px;
+}
+main{
+    position: absolute;
+}
+.main_view{
+    background: url(../img/fav.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    inset: 0vw;
+}

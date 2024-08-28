@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/for_game.css">
+    <link rel="icon" href="../img/fav.jpg">
+    <title>Игра</title>
+    <script src="../js/for_game.js" defer></script>
+</head>
+<body>
+    <main class="main_game">
+        <p id="log_title">История боя:</p>
+        <div id="log_wrap"></div>
+
+        <div class="space">
+            <div id="grid_container"></div>    
+            <div id="player_grid"></div>
+        </div>
+
+        <div class="info">
+            <img id="sheap" src="../img/sheap.png" alt="photo">
+            <p id="msg">Игра началась</p>
+        </div>
+
+        <div class="player">
+            <img id="gun" src="../img/gn.png" alt="gun">
+            <div id="helper">
+                <p id="text">Нажмите на пушку</p>
+                <p id="close">x</p>
+            </div>
+        </div>
+
+        <div id="end_game">
+            <p id="end">Конец игры</p>
+            <h2 id="end_title">БИТВА ЗАВЕРШЕНА</h2>
+            <a id="back" href="../../index.html">Вернуться в главное меню</a>
+        </div>
+
+        <div id="music_container">
+            <audio id="audio"  loop preload="auto">
+                <source src="../music/epic.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <audio id="boom" src="../music/fire.mp3"  type="audio/mpeg">Your browser does not support the audio element.</audio>
+        </div>
+
+        <a id="exit_container">
+            <img src="../img/exit.png" alt="">
+        </a>
+        
+    </main>
+</body>
+</html>

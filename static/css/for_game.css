@@ -1,0 +1,202 @@
+.main_game{
+    background: url(../img/fon.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    inset: 0vw;
+}
+#sheap{
+    width: 20vw;
+}
+#msg{
+    font-size: 36px;
+    color: white;
+}
+#gun{
+    position: block;
+    width: 20vw;
+    margin: 0 auto;
+}
+/* MUSIC */
+#music_container{
+    position: fixed;
+    right: 25px;
+    top: 6vh;
+    cursor: pointer;
+    background: url(../img/music-transformed.png);
+    background-size: contain;
+    width: 80px;
+    height: 60px;
+    z-index: 5;
+}
+.music_container:active{
+    scale: .9;
+}
+#log_title{
+    position: fixed;
+    top: 1vh;
+    left: 1vw;
+    padding-left: 1vw;
+    width: 12vw;
+    font-size: 14px;
+}
+#log_wrap{
+    position: absolute;
+    left: 1vw;
+    top: 4vh;
+    width: 13vw;
+    height: 90vh;
+    overflow-y: auto;
+    z-index: 5;
+    scrollbar-width: none;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    background: rgb(255, 255, 255, .5);
+    padding-top: 5px;
+    p{
+        font-size: 12px;
+        padding-left: 3px;
+    }
+}
+/* Поле для бота */
+.space{
+    position: relative;
+    display: flex;
+    height: 60vh;
+    margin: 0 auto;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+/* Поле бота */
+#grid_container, #player_grid{
+    display: grid;
+    grid-template-columns: repeat(10, 10fr);
+    /* width: 313px; */
+    height: 45vh;
+    margin-top: 2vh;
+    align-items: center;
+}
+.ative_grid{
+    border: 1px solid red;
+    box-shadow: 0px 5px 10px 2px rgb(15, 15, 15);
+}
+.cell, .player_cell{
+    border: 1px solid black;
+    border-radius: 2px;
+    display: inline-block;
+    height: 4.4vh;
+    width: 4.4vh;
+    text-align: center;
+    background: rgb(122, 167, 226);
+    cursor: pointer;
+    color: transparent;
+}
+.cell:active{
+    scale: .9;
+}
+/* Поле для информации */
+.info{
+    position: relative;
+    height: 10vh;
+    text-align: center;
+}
+/* Поле для игрока */
+.player{
+    position: relative;
+    display: flex;
+    height: 30vh;
+    align-self: center;
+    align-items: flex-end;
+    margin: 0 auto;
+}
+/* Конец игры */
+/* MENU */
+#end_game{
+    position: absolute;
+    text-align: center;
+    flex-direction: column;
+    width: 60vw;
+    height: 75vh;
+    left: 20vw;
+    top: 5vh;
+    border: 3px solid #000;
+    border-radius: 45px;
+    background: url(../img/logo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .98;
+    z-index: 1;
+}
+#end_game{
+    display: none;
+    gap: 15vh;
+}
+h2{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 2vh;
+}
+#end{
+    padding-top: 15px;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    letter-spacing: 3vw;
+    cursor: none;
+}
+#back{
+    width: 40vw;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 25px;
+    border: 1px solid rgb(0, 0, 0);
+    background: white;
+    border-radius: 10rem;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+#back:active{
+    scale: .9;
+}
+#helper{
+    position: absolute;
+    width: 170px;
+    height: 20px;
+    left: 60vw;
+    bottom: 6vh;
+    border: 1px solid #000;
+    border-radius: 3px;
+    display: none;
+    background: white;
+    padding-left: 5px;
+    justify-content: space-between;
+}
+#close{
+    height: 100%;
+    background: red;
+    padding: 0 5px 0 7px;
+    cursor: pointer;
+    border-left: 1px solid #000;
+}
+#close:active{
+    scale: .9;
+}
+#exit_container{
+    width: 50px;
+    height: 40px;
+    z-index: 5;
+    position: fixed;
+    right: 40px;
+    top: 16vh;
+    img{
+        width: 50px;
+        height: 40px;
+    }
+}
+#exit_container:active{
+    scale: .9;
+}

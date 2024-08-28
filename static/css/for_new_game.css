@@ -1,0 +1,175 @@
+.main_new{
+    background: url(../img/logo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    inset: 0vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    justify-content: center;
+}
+#grid{
+    margin: 0 auto;
+    margin-top: 2vh;
+    border: 1px solid #2610a3;
+    border-radius: 1rem;
+    background: url(../img/ramka.gif);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(10, 10fr);
+    grid-gap: .1rem; 
+    padding: 8vh 2vw 8vh 2vw;
+}
+.cell{
+    border: 1px solid #757575;
+    cursor: pointer;
+    width: 6.5vh;
+    height: 6.5vh;
+    text-align: center;
+    align-content: center;
+    color: transparent;
+}
+.cell:active{
+    scale: .95;
+}
+.wrap{
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+#back, #game{
+    width: 35vw;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 25px;
+    border: 1px solid rgb(9, 32, 54);
+    background: white;
+    border-radius: 10rem;
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 5px 10px 2px rgb(15, 15, 15);
+    cursor: pointer;
+}
+#back:hover, #game:hover{
+    scale: 1.01;
+    box-shadow: 0px 5px 10px 2px rgb(15, 15, 15);
+    transition: scale .5s;
+}
+#back:active, #game:active{
+    scale: .9;
+}
+#ch_sheap{
+    display: none;
+    position: absolute;
+    z-index: 6;
+    width: 126px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    border: 1px solid #000;
+    border-radius: 6px;
+    padding: 5px 3px;
+    background: white;
+    & p{
+        width: 100%;
+        cursor: pointer;
+        padding: 3px 0;
+        font-size: 14px;
+    }
+    & p:hover{
+        background: #dddbdb;
+    }
+}
+#help{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    right: 4vh;
+    top: 5vh;
+} 
+#conversation{
+    position: absolute;
+    display: none;
+    z-index: 5;
+    background: white;
+    width: 50vw;
+    top: 33vh;
+    left: 25vw;
+    border: 1px solid #000;
+    border-radius: 8px;
+    .wrap{
+        text-align: left;
+        border-radius: 8px;
+        padding-bottom: 10px;
+        p{
+            padding-left: 7px;
+            padding-top: 10px;
+        }
+    }
+}
+#cur_help{
+    position: absolute;
+    color: white;
+    left: 20%;
+    top: 4vh;
+    font-size: 20px;
+}
+.wr{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+}
+@media(max-width: 1024px) {
+    .cell{
+        width: 6.5vh;
+        height: 6.5vh;
+        font-size: 14px;
+    }
+    #cur_help{
+        left: 20%;
+    }
+}
+@media(max-width: 768px) {
+    .cell{
+        width: 6vh;
+        height: 6vh;
+        font-size: 13px;
+    }
+    #cur_help{
+        left: 20%;
+        font-size: 16px;
+    }
+    #back, #game{
+        width: 55vw;
+    }
+}
+@media(max-width: 576px) {
+    .cell{
+        width: 4.5vh;
+        height: 4.5vh;
+        font-size: 13px;
+    }
+    #cur_help{
+        left: 18%;
+        font-size: 16px;
+    }
+    #back, #game{
+        width: 65vw;
+    }
+    #conversation{
+        width: 70vw;
+    }
+}
+@media(max-width: 376px){
+    .cell{
+        width: 4.5vh;
+        height: 4.5vh;
+        font-size: 13px;
+    }
+}
